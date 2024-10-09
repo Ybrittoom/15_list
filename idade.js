@@ -43,3 +43,43 @@ idades.forEach( idade => {
     console.log(idade)
 })
 console.log("Acabou a fila usando o forEach")
+
+//adicionando os metodos
+
+console.log("Usando slice:");
+const maioresDeVinte = idades.slice(2, 5);
+console.log(`Maiores de vinte: ${maioresDeVinte}`);
+
+//metodo splice
+console.log("Usando o splice")
+const menores = idades.splice(6, 2)//remova dois elementos a partir da posiçao 6
+console.log(`Idades removidas: ${menores}`);//mostra as idades removidas
+console.log(`Lista atualizada: ${idades}`);//lista atualizada
+
+//METODO PUSH
+console.log("Usando o push")
+idades.push(20) //adicionando o numero 20 a lista de idades
+console.log(`Idade adicionada: ${idades}`)
+
+//METODO POP
+console.log("Usando o metodo POP") // remove o ultimo elemento da lista
+const IdadeRemovida = idades.pop()
+console.log(`Idade removida: ${IdadeRemovida}`)
+console.log(`Lista apos o pop: ${idades}`)
+
+//METODO MAP
+console.log("Usando o map") // Aplica uma função a todos os elementos da lista
+const IdadeEmDobro = idades.map((idade) => idade * 2)
+console.log(`Idades em dobro: ${IdadeEmDobro}`)
+
+//METODO FIND
+console.log("Usando o find") //Encontra o primeiro elemento que satisfaz a condição
+const MaiorDeTrinta = idades.find((idade) => idade > 30)
+console.log(`Idade maior que trinta: ${MaiorDeTrinta}`)
+
+//METODO FILTER
+console.log("Usando o filter") //Retorna uma nova lista com os elementos que satisfazem a condição
+const maiorDeIdade = idades.filter((idade) => idade > 18)
+console.log(`Maiores de idades: ${maiorDeIdade}`)
+
+console.log(idades)

@@ -34,3 +34,34 @@ nome.forEach(n => {
     console.log(n)
 })
 console.log("Acabou os nomes usando o forEach")
+
+console.log("Slice")
+const masculino = nome.slice(0, 2)
+console.log(masculino)
+
+console.log(`Splice`)
+const nomesRemovidos = nome.splice(2, 2)
+console.log(`Nomes removidos: ${nomesRemovidos} `)
+console.log(`Nomes atualizados: ${nome}`)
+
+console.log("Push")
+nome.push("Alan")
+nome.push("Ellen")
+console.log(nome)
+
+console.log("Pop")
+const nomeRemovido = nome.pop()
+console.log(`Nome removido: ${nomeRemovido}`)
+console.log(`Nomes apos o pop: ${nome} `)
+
+console.log("map")
+const nomesMaiusculos = nome.map(n =>  n.toUpperCase)
+console.log(nomesMaiusculos)
+
+console.log("find")
+const maiorNome = nome.find(n => n.length > 6)
+console.log(maiorNome)
+
+console.log(filter)
+const nomesLongos = nome.filter(n => n.length > 5)
+console.log(nomesLongos)
